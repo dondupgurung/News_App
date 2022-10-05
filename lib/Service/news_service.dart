@@ -42,7 +42,7 @@ class NewsService {
   static Future<List<News>> getDefaultNews() async {
     final dio = Dio();
     try {
-      await Future.delayed(Duration(seconds: 4));
+      await Future.delayed(Duration(seconds: 6));
       final response = await dio.get(Api.baseUrl, queryParameters: {
         'q': 'politics',
         'lang': 'en'
